@@ -11,7 +11,7 @@ function ColorList() {
     "red"
   ];
 
-  const colorElements = colors.map(color => <li style={{color : color}}>{color}</li>)
+  const colorElements = colors.map(color => <li key={color} style={{color : color}}>{color}</li>)
     return (
       <div>
         <h1>Top 5 CSS Colors</h1>
